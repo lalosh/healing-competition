@@ -1,0 +1,7 @@
+.footer{
+    height: 400px;
+    background-color: deepskyblue;
+    box-shadow: 0px -10px 10px lightgray;
+    padding: 15px 10%;
+    margin-top: 25px;
+}

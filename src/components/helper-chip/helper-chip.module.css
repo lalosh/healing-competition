@@ -1,0 +1,30 @@
+.helperChip {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px lightgray;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    background-color: #095f80;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.helperChipNumber {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 25px;
+    max-height: 25px;
+
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
