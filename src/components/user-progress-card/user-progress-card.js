@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './user-progress-card.module.css';
+import { Link } from 'react-router-dom';
 
 
 function UserProgressCard({ avatar, daysCount, username, percent, startDate, index }) {
@@ -8,7 +9,7 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
 
     avatar = avatar || "/images/default-avatar.png";
     daysCount = daysCount || 0;
-    percent = percent || 100;
+    percent = percent || (Math.random() * 100);
     username = username || 'username';
     startDate = startDate || new Date().toDateString();
     index = index || 0;
@@ -19,17 +20,31 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
     const finished = (percent / 100) * circumference;
     const strokeWidth = 5;
 
-    const resizeObserver = new ResizeObserver(entries => {
-        for (const entry of entries) {
-            const screenWidth = entry.contentBoxSize[0].inlineSize;
-            setScreenWidth(screenWidth);
+
+
+    useEffect(() => {
+
+        const resizeObserver = new ResizeObserver(entries => {
+            for (const entry of entries) {
+                if (entry && entry.contentBoxSize[0]) {
+                    const screenWidth = entry.contentBoxSize[0].inlineSize;
+                    setScreenWidth(screenWidth);
+                }
+            }
+        });
+
+        resizeObserver.observe(document.body);
+
+        return () => {
+            resizeObserver.unobserve(document.body);
         }
     });
 
-    resizeObserver.observe(document.body);
 
 
-    return (<div className={styles.cardContainer} style={{ flexDirection: index % 2 == 0 ? 'row' : 'row-reverse' }}>
+    return (<Link to={`/warriors/${username}`} className={styles.linkContainer}>
+        
+        <div className={styles.cardContainer} style={{ flexDirection: index % 2 == 0 ? 'row' : 'row-reverse' }}>
 
 
         <div className={styles.personAvatarContainer}>
@@ -49,7 +64,7 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
                     cy={String(circleRadius + (strokeWidth / 2))}
                     r={String(circleRadius)}
                     fill="transparent"
-                    stroke="#2ff57c"
+                    stroke="#095f80"
                     strokeWidth={String(strokeWidth)}
                     style={{
                         strokeDasharray: `${finished} ${circumference}`,
@@ -74,7 +89,7 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
             <p>Started on {startDate}</p>
         </aside>
 
-    </div>);
+    </div></Link>);
 }
 
 

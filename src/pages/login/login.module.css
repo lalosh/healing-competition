@@ -1,0 +1,93 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 40px 0;
+}
+
+.inputContainer {
+    position: relative;
+    margin: 40px 0;
+}
+
+.inputContainer input {
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color:#f5f5f5;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.svg1 {
+    position: absolute;
+    z-index: -4;
+    top: -8px;
+    left: -27px;
+}
+
+.svg2 {
+    position: absolute;
+    z-index: -4;
+    bottom: -20px;
+    right: -39px;
+}
+
+.pleaseLoginText {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loginBtn {
+    position: relative;
+    margin: 25px;
+    background: none;
+    border: none;
+    font-size: 35px;
+    
+}
+
+.loginBtn .svg1 {
+    transform: scale(0.5);
+    top: -16px;
+    left: -103px;
+}
+
+.loginBtn .svg2 {
+    transform: scale(0.5);
+    bottom: -24px;
+    right: -112px;
+}
+
+.loginBtn:hover {
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 0.2s ease-out;
+}
+
+.loginBtn:focus {
+    outline: none;
+}
+
+
+.loginBtn:hover .svg1 {
+    transform: scale(0.8);
+}
+
+.loginBtn:hover .svg1 polyline {
+    fill: #095f80;
+}
+
+.loginBtn:hover .svg2  {
+    transform: scale(0.8);
+}
+
+.loginBtn:hover .svg2 polyline {
+    fill: #fee92f;
+}

@@ -4,3 +4,4 @@ export * from './header/header';
 export * from './main-container/main-container';
 export * from './helper-chip/helper-chip';
 export * from './helper-chips-container/helper-chips-container';
+export * from './section-title/section-title';

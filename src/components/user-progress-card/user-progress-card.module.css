@@ -8,8 +8,8 @@
 }
 
 .cardContainer:hover {
-    background-color: #0091c1;
-    color: white;
+    background-color: deepskyblue;
+    color: black;
     border-radius: 15px;
     box-shadow: 2px 2px 5px lightgray;
     transition: all 0.5s ease-in-out;
@@ -25,4 +25,9 @@
 aside {
     padding: 0 5%;
     text-align: center;
+}
+
+.linkContainer{
+    text-decoration: none;
+    color: inherit;
 }

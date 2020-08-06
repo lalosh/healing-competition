@@ -20,11 +20,18 @@
     border-radius: 15px;
     padding: 5px;
     margin-left: 10px;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     color: black;
     font-weight: bold;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.helperChip:hover {
+    background-color: #fee92f;
+    cursor: pointer;
+    color: black;
+    transition: all 0.2s ease-out;
 }

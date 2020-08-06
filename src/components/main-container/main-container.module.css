@@ -1,5 +1,7 @@
 .mainContainer{
     padding: 15px 20%;
+    min-height: 46vh;
+    /* overflow: hidden; */
 }
 
 @media screen and (max-width: 768px){

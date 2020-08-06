@@ -1,0 +1,24 @@
+.sectionTitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
+.SectionTitle {
+    font-size: 30px;
+}
+
+.svg1 {
+    position: relative;
+    top: -90px;
+    left: -40px;
+}
+
+.svg2 {
+    position: relative;
+    top: -127px;
+    right: -56px;
+}
