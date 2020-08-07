@@ -1,0 +1,12 @@
+.warriorEditContainer {
+    margin: 5px 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.warriorEditContainer > p{
+    font-size: 28px;
+}

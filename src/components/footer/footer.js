@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { SectionTitle } from '../index.js';
 
 function Footer() {
-    return (<footer className={styles.footer}>
-
+    return (<footer className={styles.footer} id="footer">
 
 
         <div className={styles.linksContainer}>

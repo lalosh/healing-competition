@@ -4,24 +4,15 @@ import { Link } from 'react-router-dom';
 
 
 function Header() {
-    return (<header className={styles.header} style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
-        {/* Healing Competition */}
+    return (<header className={styles.header}>
 
-        <Link to="/">home</Link>
-        <Link to="/warriors/login">login</Link>
-        <Link to="/warriors/signup">signup</Link>
-        <Link to="/warriors/edit/4">warrior edit</Link>
-        <Link to="/warriors">warriors</Link>
-        <Link to="/warriors/5">one warrior</Link>
-        <Link to="/warriors/challenges/90Day">90Day</Link>
-        <Link to="/warriors/challenges/180Day">180Day</Link>
-        <Link to="/warriors/challenges/270Day">270Day</Link>
-        <Link to="/warriors/challenges/360Day">360Day</Link>
-        <Link to="/warriors/challenges/winners">winners</Link>
-        <Link to="/warriors/helpers">helpers</Link>
-        <Link to="/warriors/helpers/4">one helper</Link>
+        <Link to="/#footer">{'about'}</Link>
 
-    
+        <Link to="/"><h1>{'Healing Competition'}</h1></Link>
+
+        <Link to="/warriors/login">{'Login'}</Link>
+
+
     </header>);
 }
 

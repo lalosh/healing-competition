@@ -35,3 +35,10 @@
     color: black;
     transition: all 0.2s ease-out;
 }
+
+
+@media screen and (max-width: 768px) {
+    .helperChip{
+        margin: 4px;
+    }
+}

@@ -46,63 +46,55 @@ function SignupPage() {
         console.log(warriorName, warriorPassword, startDate);
     }
 
-    return (
-        <div>
-            <Header />
+    return (<MainContainer>
 
-            <MainContainer>
-
-                <p className={styles.pleaseLoginText}>Please enter your info to Signup</p>
+        <p className={styles.pleaseLoginText}>Please enter your info to Signup</p>
 
 
 
-                <form className={styles.form}>
+        <form className={styles.form}>
 
-                    <WarriorInput
-                        value={warriorName}
-                        onChange={warriorNameOnChange}
-                        placeholder={"Warrior Name"}
-                    />
+            <WarriorInput
+                value={warriorName}
+                onChange={warriorNameOnChange}
+                placeholder={"Warrior Name"}
+            />
 
 
-                    <WarriorInput
-                        value={warriorPassword}
-                        onChange={warriorPasswordOnChange}
-                        placeholder={"Warrior Password"}
-                        type={"password"}
-                    />
+            <WarriorInput
+                value={warriorPassword}
+                onChange={warriorPasswordOnChange}
+                placeholder={"Warrior Password"}
+                type={"password"}
+            />
 
-                    <WarriorButton hoverIt={startNow} onClick={startNowHandler}>
-                        Start Now
+            <WarriorButton hoverIt={startNow} onClick={startNowHandler}>
+                Start Now
                     </WarriorButton>
 
-                    <span>OR</span>
+            <span>OR</span>
 
-                    <WarriorButton hoverIt={!startNow} onClick={selectDateHandler}>
-                        Select Date
+            <WarriorButton hoverIt={!startNow} onClick={selectDateHandler}>
+                Select Date
                     </WarriorButton>
 
-                    {!startNow ?
-                        <Calendar value={startDate} onChange={dateChangeHandler} />
-                        :
-                        null
-                    }
+            {!startNow ?
+                <Calendar value={startDate} onChange={dateChangeHandler} />
+                :
+                null
+            }
 
 
 
-                    <WarriorButton onClick={signupHandler}>
-                        Signup
+            <WarriorButton onClick={signupHandler}>
+                Signup
                     </WarriorButton>
 
 
 
-                </form>
+        </form>
 
-            </MainContainer>
-
-            <Footer />
-        </div>
-    );
+    </MainContainer>);
 }
 
 

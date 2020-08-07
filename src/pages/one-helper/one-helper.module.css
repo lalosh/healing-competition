@@ -1,0 +1,12 @@
+.warriorsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.helperName{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}

@@ -18,45 +18,37 @@ function LoginPage() {
         setWarriorPassword(event.target.value);
     }
 
-    return (
-        <div>
-            <Header />
+    return (<MainContainer>
 
-            <MainContainer>
+        <p className={styles.pleaseLoginText}>Please enter your warrior identity to login</p>
 
-                <p className={styles.pleaseLoginText}>Please enter your warrior identity to login</p>
+        <form className={styles.form}>
 
-                <form className={styles.form}>
-
-                    <WarriorInput
-                        value={warriorName}
-                        onChange={warriorNameOnChange}
-                        placeholder={"Warrior Name"}
-                    />
+            <WarriorInput
+                value={warriorName}
+                onChange={warriorNameOnChange}
+                placeholder={"Warrior Name"}
+            />
 
 
-                    <WarriorInput
-                        value={warriorPassword}
-                        onChange={warriorPasswordOnChange}
-                        placeholder={"Warrior Password"}
-                        type={"password"}
-                    />
+            <WarriorInput
+                value={warriorPassword}
+                onChange={warriorPasswordOnChange}
+                placeholder={"Warrior Password"}
+                type={"password"}
+            />
 
 
-                    <WarriorButton>Login</WarriorButton>
+            <WarriorButton>Login</WarriorButton>
 
-                    <span>OR</span>
+            <span>OR</span>
 
-                    <WarriorButton> <Link to="/warriors/signup"> Signup </Link> </WarriorButton>
+            <WarriorButton> <Link to="/warriors/signup"> Signup </Link> </WarriorButton>
 
 
-                </form>
+        </form>
 
-            </MainContainer>
-
-            <Footer />
-        </div>
-    );
+    </MainContainer>);
 }
 
 

@@ -1,20 +1,16 @@
 import React from 'react';
 import styles from './helpers.module.css';
-import { Header, MainContainer, Footer } from '../../components';
+import { Header, MainContainer, Footer, SectionTitle, HelperChipsContainer } from '../../components';
 
 function HelpersPage() {
 
-    return (
-        <div>
-            <Header />
+    return (<MainContainer>
 
-            <MainContainer>
-                Helpers page
-            </MainContainer>
+        <SectionTitle>{'What helped people'}</SectionTitle>
 
-            <Footer />
-        </div>
-    );
+        <HelperChipsContainer />
+
+    </MainContainer>);
 }
 
 export { HelpersPage };

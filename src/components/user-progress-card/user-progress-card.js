@@ -11,8 +11,8 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
     const [screenWidth, setScreenWidth] = useState(0);
 
     avatar = avatar || "/images/default-avatar.png";
-    daysCount = daysCount || 0;
     percent = percent || (Math.random() * 100);
+    daysCount = daysCount || 0;
     username = username || 'username';
     startDate = startDate || new Date().toDateString();
     index = index || 0;
@@ -41,7 +41,6 @@ function UserProgressCard({ avatar, daysCount, username, percent, startDate, ind
     return (<Link to={`/warriors/${username}`} className={styles.linkContainer}>
 
         <div
-            // className={styles.cardContainer}
             className={cx({
                 cardContainer: true,
                 cardContainerReverse: index % 2 != 0 ? true : false
