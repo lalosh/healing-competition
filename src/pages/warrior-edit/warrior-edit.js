@@ -3,7 +3,12 @@ import styles from './warrior-edit.module.css';
 
 function WarriorEdit() {
 
-    return (<div>warrior edit</div>)
+    return (<div>
+
+        edit
+
+
+    </div>)
 }
 
 export { WarriorEdit };

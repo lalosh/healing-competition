@@ -1,0 +1,31 @@
+
+.inputContainer {
+    position: relative;
+    margin: 40px 0;
+}
+
+.inputContainer input {
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color:#f5f5f5;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+.svg1 {
+    position: absolute;
+    z-index: -4;
+    top: -8px;
+    left: -27px;
+}
+
+.svg2 {
+    position: absolute;
+    z-index: -4;
+    bottom: -20px;
+    right: -39px;
+}

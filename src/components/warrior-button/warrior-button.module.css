@@ -1,0 +1,59 @@
+.warriorButton {
+    position: relative;
+    margin: 25px;
+    background: none;
+    border: none;
+    font-size: 35px;
+}
+
+.svg1 {
+    position: absolute;
+    z-index: -4;
+    top: -8px;
+    left: -27px;
+}
+
+.svg2 {
+    position: absolute;
+    z-index: -4;
+    bottom: -20px;
+    right: -39px;
+}
+
+.warriorButton .svg1 {
+    transform: scale(0.5);
+    top: -16px;
+    left: -103px;
+}
+
+.warriorButton .svg2 {
+    transform: scale(0.5);
+    bottom: -24px;
+    right: -112px;
+}
+
+.warriorButton:hover {
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 0.2s ease-out;
+}
+
+.warriorButton:focus {
+    outline: none;
+}
+
+.warriorButton:hover .svg1 {
+    transform: scale(0.8);
+}
+
+.warriorButton:hover .svg1 polyline {
+    fill: #095f80;
+}
+
+.warriorButton:hover .svg2 {
+    transform: scale(0.8);
+}
+
+.warriorButton:hover .svg2 polyline {
+    fill: #fee92f;
+}

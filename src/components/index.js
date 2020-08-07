@@ -5,3 +5,6 @@ export * from './main-container/main-container';
 export * from './helper-chip/helper-chip';
 export * from './helper-chips-container/helper-chips-container';
 export * from './section-title/section-title';
+export * from './warrior-input/warrior-input';
+export * from './warrior-button/warrior-button';
+export * from './warrior-avatar/warrior-avatar';

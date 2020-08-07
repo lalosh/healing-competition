@@ -1,19 +1,37 @@
 .cardContainer {
-    padding: 10px;
-    margin: 30px 0;
+    padding: 10px 40px;
+    margin: 0px 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    flex-direction: row;
+    background: whitesmoke;
+    border-radius: 15px;
+    border-right: 50px solid transparent;
+    border-bottom: 2px solid #fee92f;
+    border-left: 5px solid #fee92f;
+    border-top: 50px solid transparent;
+}
+
+.cardContainerReverse {
+    border-left: 50px solid transparent;
+    border-bottom: 2px solid #095f80;
+    border-right: 5px solid #095f80;
+    border-top: 50px solid transparent;
 }
 
 .cardContainer:hover {
-    background-color: deepskyblue;
+    background-color: transparent;
     color: black;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px lightgray;
-    transition: all 0.5s ease-in-out;
+    box-shadow: 3px 0px 0px 2px #095f80;
+    transition: all 0.4s ease-out;
     cursor: pointer;
+}
+
+.cardContainerReverse:hover {
+    box-shadow: -3px 0px 0px 2px #fee92f;
 }
 
 .personAvatarContainer {
@@ -25,9 +43,16 @@
 aside {
     padding: 0 5%;
     text-align: center;
+    width: 100%;
 }
 
-.linkContainer{
+.linkContainer {
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        padding: 5px;
+    }
 }
